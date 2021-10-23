@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import BlogPost from './BlongPost/BlogPost';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BlogPost></BlogPost>
   </React.StrictMode>,
   document.getElementById('root')
 );
