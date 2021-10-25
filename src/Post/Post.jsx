@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Post = ({data,remove}) =>{
+const Post = ({data,remove,update}) =>{
     return (
         <div className="post">
         <div className="img-thumb">
@@ -9,6 +9,7 @@ const Post = ({data,remove}) =>{
         <div className="content">
           <p className="title">{data.title}</p>
           <p className="desc">{data.body}</p>
+          <button className='update' onClick={() => update(data)}>update</button>
           <button className='remove' onClick={() => remove(data.id)}>remove</button>
         </div>
       </div>
